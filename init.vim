@@ -162,4 +162,4 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 " Tagbar:
-nmap = :TagbarToggle<CR>
+map <F4> :TagbarToggle<CR>
