@@ -163,3 +163,5 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " Tagbar:
 map <F4> :TagbarToggle<CR>
+let g:tagbar_sort = 0  " Disable alphabetical sort
+let g:tagbar_foldlevel = 0  " Don't expand folds
