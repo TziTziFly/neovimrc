@@ -151,6 +151,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 source /usr/share/doc/fzf/examples/plugin/fzf.vim
 map <leader>t :FZF <CR>
 map <leader>f :Rg 
+map <leader>d :call fzf#vim#tags(expand('<cword>'))<CR>
 
 " Coc:
 set signcolumn=no
