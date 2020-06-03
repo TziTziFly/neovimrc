@@ -5,6 +5,7 @@
 call plug#begin()
 Plug '/usr/local/opt/fzf'
 Plug 'elixir-lang/vim-elixir'
+" Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 Plug 'ervandew/supertab'
 Plug 'junegunn/fzf.vim'
 Plug 'kien/rainbow_parentheses.vim'
@@ -15,11 +16,14 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvie/vim-flake8'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/tcomment'
 call plug#end()
 
+" Debian/Coc mess:
+let g:coc_disable_startup_warning = 1
 
 "#########################"
 " Custom Editor Shortcuts "
@@ -53,7 +57,7 @@ map § $
 map ` $
 
 " Autoclose braces:
-inoremap {<CR> {<CR>}<C-o>O
+inoremap {<CR> {<CR>}<ESC>O
 
 " Reload vimrc:
 map <leader>v :so $MYVIMRC<CR>
